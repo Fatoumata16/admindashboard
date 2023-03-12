@@ -1,0 +1,420 @@
+* {
+    font-family: 'Poppins' sans-serif;
+}
+.inputvalue{
+   background: #ffffff;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+   border-radius: 12px;
+   border: none; 
+}
+.imgGauche{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+.container{
+    margin-top: 8%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    padding: 35px;
+}
+
+label{
+    margin-left: 10px;
+}
+img{
+        position: relative;
+        top: 15%;
+        margin-left: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+.imgGauche h6{
+            margin-top: -3%;
+            margin-bottom: 20vh;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+.trait{
+            border: 2px solid #FF6600;
+            width: 150px;  
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+
+.btnAjouter{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    margin-left: 2%;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.btnAjouter:hover{
+    background-color: #FF6600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================TIEC=========================
+// .container{
+//     position: absolute;
+//     margin: 5vh;
+//     right: 0;
+//     width: 70vw;
+//     height: 80vh;
+//     display: flex;
+//     justify-content: center;
+//     border-radius: 12px;
+//     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+// }
+
+// .left{
+//     margin: 5vh;
+//     width: 30%;
+//     height: 70vh;
+//     background-color: black;
+//     border-radius: 12px;
+// }
+
+// img{
+//     position: relative;
+//     top: 20%;
+//     margin-left: 15%;
+// }
+
+// .left h2{
+//     margin-top: 17%;
+//     color: white;
+//     text-align: center;
+//     justify-content: center;
+//     margin-bottom: 0%;
+    
+// }
+// .left h6{
+//     margin-top: 2%;
+//     margin-bottom: 20vh;
+//     color: white;
+//     font-size: 10px;
+//     text-align: center;
+//     justify-content: center;
+    
+// }
+
+// .right{
+//     margin: 5vh;
+//     height: 70vh;
+//     margin-left: 50vh;
+//     flex-direction: column;
+    
+// }
+// .right h2{
+//     text-align: center;
+//     margin-left: 0%;
+//     margin-right: 0%;
+//     font-size: 40px;
+//     font-weight: bold;
+// }
+
+// .trait
+// {
+//     border: 3px solid #FF6600;
+//     width: 100px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 30px;
+// }
+
+// input, select{
+//     width: 250px;
+//     height: 50px;
+//     border-radius: 12px;
+//     border: 1px solid white;
+//     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+// }
+
+
+
+
+// td{
+//     padding: 10px;
+// }
+// td .eml{
+//     width: 520px;
+// }
+// .slt{
+//     width: 250px;
+//     height: 50px ;
+
+// }
+// input[type=submit]{
+//     background-color: black;
+//     color: white;
+//     border-radius: 12px;
+//     margin-top: 5%;
+//     margin-left: 2%;
+// }
+
+ion-select
+{
+    color: black;
+}
+.nav-link {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+  }
+  .cards{
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    width: 75%;
+}
+
+.cardes{
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    width: 28%;
+    position: relative;
+    top: 60%;
+    left: 5%;
+    z-index: 1;
+}
+.txt{
+    padding: 5px;
+}
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    // transform: translateY(-50%);
+    //transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  #sidebar{
+    background-color: #151921;
+    width: 19%;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    //margin-left: 100px;
+   
+  }
+  .xs{
+    padding: 15px;
+  }
+  .navbar{
+    border-radius: 8px;
+  }
+  
+  .xs{
+    background-color: white;
+   // border-radius: 8px;
+  }
+  .ct{
+    padding: 10px;
+    height: 75vh;
+  }
+  .li{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  .active{
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    color: black;
+    width: 100%;
+  }
+  
+  span{
+    font-size: 30px!important;
+  }
+  
+  #icon {
+    transform: rotate(15deg);
+  }
+  
+  #container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  #icon {
+    position: absolute;
+    // font-size: 30px;
+    color: blue;
+  }
+  .custom-icon {
+    font-size: 1.8rem; /* ou une autre valeur selon vos besoins */
+  }
+  .custom {
+    font-size: 1.8rem!important; /* ou une autre valeur selon vos besoins */
+  }
+  .number{
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #number {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10%;
+  }
+  
+  #container {
+    animation: rotation 2s linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  
+  .signe{
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    border-radius: 100%;
+  }
+  .txt{
+    font-size: 20px;
+    color: blue;
+  }
+  .content-notif{
+    overflow: auto;
+    height: 400px;
+  }
+  
+  .bl:hover::after {
+    content: "Appuyer pour marquer comme lu";
+    color: red;
+    position: relative;
+    margin-top: 25px;
+    right: 15%;
+  }
+  
+  
+  
+  //pour le modale de la modifiaction du profil
+  .body{
+    // width: 100%;
+    // height: 450px;
+    padding: 10px;
+  }
+  
+  .f-part{
+    background-color: white;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.8)!important;
+  }
+  .trait{
+    border: 2px solid blue;
+    width: 300px;
+  }
+  .form-control{
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6)!important;
+  }
+  .msg{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #EB8024;
+  }
+  
+  .lgo{
+    background-image: url("/assets/memories.png");
+    background-size: 195px;
+    background-repeat: no-repeat;
+    
+   
+    position: relative;
+    top: 20px;
+    left: -30px;
+    
+  }
+  
+  .dec
+  {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+  }
+  .nav-link {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin-left: 25px;
+  }

@@ -1,0 +1,265 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>accueil</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+<div style="display: flex;justify-content: center; height: 100%!important;">
+<div style="width: 95%!important;background-color: black;height: 95%!important;display: flex;margin: 20px;  border-radius: 20px;">
+<div style="background-color: rgb(8, 8, 8);width: 20%;margin: 20px!important;border-radius: 20px; overflow: auto;">
+<div >
+  <section id="sidebar">
+		<a href="#" class="brand">
+<img src="/assets/icon/favicon.png" alt="">			<span class="text" style="color: white;">AdminHub</span>
+		</a>
+		<ul class="side-menu top" style="margin-left: -28px;">
+			<li class="active" style="margin-bottom: 30px;">
+				<a href="#">
+          <img src="/assets/icon/favicon.png" alt="" style="width: 45px;">						<span class="text" style="color: white; position: relative;left: 10px;font-family: 'Poppins';font-weight: 400;font-size: 27px;">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+          <ion-icon name="home" size="large"  color="light" style="position: relative;left: 0px;"></ion-icon>
+					<span class="text" style="color: white;font-style: normal;
+          font-weight: 600;
+          font-size: 27px;
+          line-height: 90px;
+          
+          color: #FFFFFF;
+          ">My Store</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+          <ion-icon name="home" size="large" color="light"></ion-icon>
+					<span class="text" style="color: white;font-style: normal;
+          font-weight: 600;
+          font-size: 27px;
+          line-height: 90px;
+          
+          color: #FFFFFF;
+         ">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+          <ion-icon name="home" size="large" color="light"></ion-icon>
+					<span class="text"style="color: white;font-style: normal;
+          font-weight: 600;
+          font-size: 27px;
+          line-height: 90px;
+          
+          color: #FFFFFF;
+          
+         ">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+          <ion-icon name="home" size="large" color="light"></ion-icon>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+          <ion-icon name="home" size="large"></ion-icon>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+          <ion-icon name="home" size="large"></ion-icon>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+  
+</div>
+</div>
+<div style="background-color: white;width: 80%;margin: 20px!important;border-radius: 20px;overflow: auto; scrollbar-width: none;  " class="al">
+<ion-grid>
+  <ion-row>
+    <ion-col size-xs="12" size-sm="2">
+
+    </ion-col>
+    <ion-col size-xs="12" size-sm="8">
+      <div style="background-color: rgb(221, 60, 20);height: 60px;text-align: center;">
+        <h1 style="position: relative;;top: -20px;font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 90px;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Bienvenue a Orange Digital Kalanso</h1>
+      </div>
+    </ion-col>
+    <ion-col size-xs="12" size-sm="2">
+      
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div class="row" style="margin-left: 10px;margin-right: 10px;margin-top: 40px;">
+  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+    <div class="card" style="background-color: #ffffff;color: #0c0c0c;box-shadow: 2px 5px 1px 0px">
+      <div class="card-body">
+        <div class="row" style="display: flex;justify-content: center;">
+          
+         <img src="/assets/icon/favicon.png" alt="" style="width: 100px;">
+        </div>
+        <div class="row" >
+<h3  style="text-align: center;margin-top: 10px;"></h3>         </div>
+         <div class="row">
+<h3 style="text-align: center;">etudiants</h3>         </div>
+      </div>{{et}}
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+    <div class="card" style="background-color: #ffffff;color: #0a0a0a;box-shadow: 2px 5px 1px 0px">
+      <div class="card-body">
+        <div class="row" style="display: flex;justify-content: center;">
+          
+          <img src="/assets/icon/favicon.png" alt="" style="width: 100px;">
+         </div>
+         <div class="row" >
+ <h3  style="text-align: center;margin-top: 10px;">{{fo}}</h3>         </div>
+          <div class="row">
+ <h3 style="text-align: center;">formations</h3>         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+    <div class="card" style="background-color: #ffffff;color: #070707;box-shadow: 2px 5px 1px 0px">
+      <div class="card-body">
+        <div class="row" style="display: flex;justify-content: center;">
+          
+          <img src="/assets/icon/favicon.png" alt="" style="width: 100px;">
+         </div>
+         <div class="row" >
+ <h3  style="text-align: center;margin-top: 10px;">{{pro}}</h3>         </div>
+          <div class="row">
+ <h3 style="text-align: center;">promotions</h3>         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+    <div class="card" style="background-color: #ffffff ;color: #0f0f0f;box-shadow: 2px 5px 1px 0px">
+      <div class="card-body">
+        <div class="row" style="display: flex;justify-content: center;">
+          
+          <img src="/assets/icon/favicon.png" alt="" style="width: 100px;">
+         </div>
+         <div class="row" >
+ <h3  style="text-align: center;margin-top: 10px;">{{st}}</h3>         </div>
+          <div class="row">
+ <h3 style="text-align: center;">soutenances</h3>         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="margin-top: 30px;margin-left: 10px;margin-right: 10px;">
+  <div class="col-xl-12 col-sm-12 grid-margin stretch-card">
+    <div class="card" style="background-color: #fbfbfc ;box-shadow: 1px 6px 2px 0px ;">
+      <ion-select placeholder="Select all fruits that apply" [multiple]="true" (ionChange)="onFileSelected($event)">
+        <ion-select-option   *ngFor="let g of t ">{{g.nom}}</ion-select-option>
+        
+      </ion-select>
+      <div class="card-body">
+         <canvas id="MyChart">{{chart}}</canvas>
+
+
+
+      <div>
+
+      </div>
+      
+     </div> </div> </div> </div>
+
+     <div class="row" style="margin-left: 10px;margin-right: 10px;margin-top: 40px;margin-bottom: 20px; ">
+      <div class="col-xl-6 col-sm-6 grid-margin stretch-card">
+        <div class="card" style="background-color: white ;color: black;box-shadow: 1px 6px 2px 0px ;">
+          <div class="card-body" style="color: black; "  >
+            <!-- <ion-item> <h3>fatoumata</h3>
+            <h3>12/20</h3>
+            </ion-item> -->
+            <div  style="color: black; display: flex; justify-content: space-between;"> <h3>dfgfr</h3>
+              <h3>Total critere evaluation</h3></div>
+              <div  style="color: black; display: flex; justify-content: space-between;"> <h3>dfgfr</h3>
+                <h3>{{pk}}</h3></div>
+               
+           
+            
+          </div> </div> </div>
+            <div class="col-xl-6 col-sm-6 grid-margin stretch-card">
+              <div class="card" style="background-color: white;color: black;box-shadow: 1px 6px 2px 0px ;">
+                <div class="card-body" >
+                <div style="display: flex;justify-content: center
+                ;">
+                  <h3>jury</h3></div>
+                  <div style="display: flex;justify-content: center
+                  ;">
+                  <h2 >{{p}}</h2> </div>
+                  <div style="display: flex;justify-content: center
+                  ;">
+                  <ion-button id="open-modal">
+                    voir plus
+                  </ion-button> </div>
+                </div> </div> </div>
+            
+           </div> 
+
+
+
+
+  
+</div>
+</div> </div>
+<ion-modal #modal trigger="open-modal">
+  <ng-template>
+    <ion-content  >
+      <h4 style="font-size:32px;font-family: 'inika';font-weight: 600;text-align: center;position: relative;;top: 30px;">La liste des promotions de la formation</h4>
+      <div style="display: flex;justify-content: center;"> 
+      <hr style="background-color: #DC2106;width: 120px;height: 3px;position: relative;;top: 20px;"> 
+    </div><div class="fond" style="display: flex;justify-content: center;">
+        <div class="container" style="margin: 30px;">
+          <div class="row" style="position: relative;top: 40px;">
+            <div class="table-responsive">
+              <table class="table">
+                <thead style="background-color: #080808;">
+                  <tr style="color: white;">
+                    <th scope="col" style="border-top-left-radius: 20px;">#</th>
+                    <th scope="col">nom</th>
+                    <th scope="col">date de debut</th>
+                    <th scope="col">Heure de debut </th>
+                    <th scope="col"  style="border-top-right-radius: 20px;">Heure de fin</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let m of pl ">
+                    <td>{{m[0]}}</td>
+                    <td>{{m[1]}}</td>
+                    <td>{{m[2]}}</td>
+                    <td>{{m[3]}}</td>
+                    <td>{{m[4]}}</td>
+
+                    
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+            </div></div>
+       
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+</ion-content>

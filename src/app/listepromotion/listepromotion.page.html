@@ -1,0 +1,428 @@
+
+<!-- l'appel du menu dans les autres page -->
+<!-- <ion-header>
+  <ion-toolbar>
+      <ion-title>Menu</ion-title>
+      <ion-button slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-button>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content >
+  <div class="container-fluid" style="background-color: #E6EAF1; margin-left: 10px;">
+    <div class="container-fluid" style="overflow: hidden; background-color: #E6EAF1; margin-left: 10px;">
+        <div class="row flex-nowrap" style="background-color: #E6EAF1;" >
+            <div id="sidebar" class="col-auto sidebar mx-auto collapse collapse-horizontal show"
+                style="height: 96vh;" >
+      
+                <div class="col mt-2 mb-2 mx-4" >
+                    <div class="lgo py-5 mx-2"></div>
+                </div>
+                <hr class="text-center" style="background-color: white;width: 90%; margin-left: auto;
+                margin-right: auto;">
+      
+               
+
+      
+      <div class="li mt-3 mb-5 text-center">
+      
+        <div class="nav-item mb-3"  style="position: relative;left: -18px;" >
+          <a class="nav-link" routerLink="/essay" style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;" > <ul> <ion-grid> <ion-row>
+            <ion-col size-xs="12" size-sm="2"><i class="bi bi-house mx-2"></i></ion-col>
+            <ion-col size-xs="12" size-sm="1"></ion-col>
+            <ion-col size-xs="12" size-sm="9">Accueil</ion-col>
+
+
+          </ion-row></ion-grid> </ul></a>
+        </div>
+
+        <div class="nav-item mb-3"  style="position: relative;left: -18px;">
+          <a class="nav-link" routerLink="/listeetudiant" style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;"><ul><ion-grid> <ion-row>
+            <ion-col size-xs="12" size-sm="2"><i class="bi bi-mortarboard"></i></ion-col>
+            <ion-col size-xs="12" size-sm="1"></ion-col>
+            <ion-col size-xs="12" size-sm="9">Soutenance</ion-col>
+
+
+          </ion-row></ion-grid></ul></a>
+        </div>
+
+        <div class="nav-item mb-3"  style="position: relative;left: -18px;">
+          <a class="nav-link" routerLink="/listeformation" style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;" ><ul> <ion-grid> <ion-row>
+            <ion-col size-xs="12" size-sm="2"><i class="bi bi-clipboard-data"></i></ion-col>
+            <ion-col size-xs="12" size-sm="1"></ion-col>
+            <ion-col size-xs="12" size-sm="9">Formations</ion-col>
+
+
+          </ion-row></ion-grid></ul></a>
+        </div>
+        <div class="nav-item mb-3"  style="position: relative;left: -18px;">
+          <a class="nav-link" routerLink="/resultat" style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;" ><ul> <ion-grid> <ion-row>
+            <ion-col size-xs="12" size-sm="2"><i class="bi bi-reception-4"></i></ion-col>
+            <ion-col size-xs="12" size-sm="1"></ion-col>
+            <ion-col size-xs="12" size-sm="9">Resultat</ion-col>
+
+
+          </ion-row></ion-grid></ul></a>
+        </div>
+      
+      
+
+        <div class="nav-item mb-5" style="position: relative;left: -18px;">
+          <a class="nav-link" routerLink="/critereinfo" style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;"><ul> <ion-grid> <ion-row>
+            <ion-col size-xs="12" size-sm="2"><i class="bi bi-list-check"></i></ion-col>
+            <ion-col size-xs="12" size-sm="1"></ion-col>
+            <ion-col size-xs="12" size-sm="9"> Les Criteres </ion-col>
+          </ion-row></ion-grid></ul></a>
+        </div>
+      
+
+        <div class="nav-item mt-5" style="position:relative; top: 0px;">
+          <!-- deconnection -->
+          <a class="nav-link mx-auto d-block mt-5 dec" type="submit" (click)="es()" ><i class="bi bi-box-arrow-left"></i>  Deconnexion</a>
+        </div>
+
+      </div>
+                <!-- </div> -->
+            </div>
+            <main class="col container-fluid" style=" height: 100vh ; overflow: scroll; overflow-x: hidden; background-color: #E6EAF1;;">
+      
+                <div class="Container xs" style="background-color: #E6EAF1; height: 100vh; width: 100%;">
+      
+                  <nav class="navbar navbar py-1" style="background-color: white;height: 9vh ;border-radius: 5px;" >
+      
+                    <a href="#" class="sidebar-toggler flex-shrink-0" data-bs-toggle="collapse" style="position: relative
+                    ;top: -10px;"
+                        data-bs-target="#sidebar" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        <i class="bi bi-list fa-3x mx-2 custom" style="position: relative;top: 5px;"></i>
+                    </a>
+      
+                    <form class="d-none d-md-flex mr-4" style="position: relative;top: -12px;">
+                    
+                      <!-- // nom utilisateur  -->
+                      <i type="submit" data-bs-toggle="modal" data-bs-target="#user" class="bi bi-person-circle fa-3x mx-5 custom" style="position: relative;top: 15px;"><span style="font-family: 'Inika';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 17px!important;
+                        line-height: 18px;
+                        
+                        color: #000000;">Fatoumata</span></i>
+      
+                    </form>
+                </nav>
+                
+                <div class="container-scroller">
+                  <!-- partial:partials/_sidebar.html -->
+              
+                      <div class="content-wrapper" style="background-color: rgba(255, 255, 255, 0);">
+                        <div  class="row" style="display: flex;justify-content: center;">
+                          <div class="col-9" style="color: black;background-color:  #15192100;margin-bottom: 30px; text-align: center;height: 60px;position: relative;top: 20px;">
+                            <h1 style=" font-family: 'Inika';font-style: normal;font-weight: 600;font-size: 30px;line-height: 90px;text-shadow: 0px 4px 4px rgba(145, 5, 5, 0.521);color: #151921;position: relative;top: -40px;">La Liste Des promotions d'une formation </h1>
+                          </div>
+                         
+                        </div>
+                       <div style="display: flex;justify-content: space-between;margin-bottom: 40px; position: relative;top: 40px;">
+                        <ion-item>
+                        <ion-select placeholder="Type"  (ionChange)="onFileSelecte($event)">
+                          <ion-select-option   *ngFor="let g of se ">{{g.nom}}</ion-select-option>
+                          
+                        </ion-select>
+                      </ion-item>
+                      </div>
+                      <div class="container">
+                        <div class="row" style="position: relative;top: 40px;">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead style="background-color: #151921;color: white;">
+                                <tr >
+                                  <th scope="col" style="border-top-left-radius: 20px;">#</th>
+                                  <th scope="col">nom</th>
+                                  <th scope="col">date de debut</th>
+                                  <th scope="col">Heure de debut </th>
+                                  <th scope="col"  style="border-top-right-radius: 20px;">Heure de fin</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let m of k ">
+                                  <td>{{m[0]}}</td>
+                                  <td>{{m[1]}}</td>
+                                  <td>{{m[2]}}</td>
+                                  <td>{{m[3]}}</td>
+                                  
+                                  <td> <button style="margin-left: 5px;" data-bs-toggle="modal" data-bs-target="#usert" (click)="alle(m)"><i class="bi bi-pencil-square"></i></button> <button style="margin-left: 5px;" (click)="all(m[0])"><i class="bi bi-trash"></i></button></td>
+                                </tr>
+                              
+                              </tbody>
+                            </table>
+                          </div>
+                          </div></div>
+              
+                            
+                      </div>
+                 
+                    </div>
+                
+                
+                
+                     
+                </div>
+               
+
+            </main>
+        </div>
+
+      </div>
+     
+      
+      <!-- Le modal concernant les info de l'utilisateur -->
+      <div class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content mod">
+            <div class="modal-header">
+                    <div class="col-md-6">
+                        <h5 class="title">Mon profil</h5>
+                    </div>
+      
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+      
+               <!-- afficher info admin -->
+              <div class="container" >
+                <header class="jumbotron">
+      
+                  <h5>
+                    <strong> Nom d'utilisateur: </strong> currentUser.username
+                  </h5>
+                  <h5>
+                    <strong>Email:</strong>
+                     liste.email 
+                  </h5>
+                  <h5>
+                    <strong>Numero:</strong>
+                     liste.numero
+                  </h5>
+                  <h5>
+                    <strong>Adresse: </strong>
+                     liste.adresse 
+                  </h5>
+                </header>
+                <div class="text-end">
+                  <button class="btn btn-outline-success text-center" data-bs-toggle="modal" data-bs-target="#profil"> Modifier</button>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="users" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content mod">
+            <div class="modal-header">
+                    <div class="col-md-6">
+                        <h5 class="title">Ajout formation</h5>
+                    </div>
+      
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+      
+               <!-- afficher info admin -->
+               <div class="container">
+                <div class="row boxShadow">
+                  <!------------- Colonne Gauche---->
+                 
+              
+                  <!------------- Colonne Droite ---->
+                  <div class="col-12 col-md-12">
+                    <form>
+                    
+                      <div class="row col-12">
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="name" id="name" placeholder="Nom" class="form form-control inputvalue"  [(ngModel)]="nom">
+                          <label for="name">Nom</label>
+                        </div>
+                       
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="date" name="num" id="num" placeholder="Numéro" class="form form-control inputvalue" [(ngModel)]="debut">
+                          <label for="num">date debut</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="date" name="email" id="email" placeholder="email" class="form form-control inputvalue"[(ngModel)]="fin">
+                          <label for="email">date fin</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <select name="sexe" id="sexe" class="form-select form-control inputvalue" [(ngModel)]="fini" >
+                              <option selected> --- formation ---</option>
+                              <option *ngFor="let g of ti "> {{g.nom}}</option>
+                              
+                          </select>
+                        </div>
+                       
+                      </div>
+                      <button class="btn btnAjouter" (click)="onFileSelected()">Ajouter</button>
+                      
+                    
+                    </form>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="usert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content mod">
+            <div class="modal-header">
+                    <div class="col-md-6">
+                        <h5 class="title">Ajout formation</h5>
+                    </div>
+      
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+      
+               <!-- afficher info admin -->
+               <div class="container">
+                <div class="row boxShadow">
+                  <!------------- Colonne Gauche---->
+                 
+              
+                  <!------------- Colonne Droite ---->
+                  <div class="col-12 col-md-12">
+                    <form>
+                    
+                      <div class="row col-12">
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="n" id="n" placeholder="Nom" class="form form-control inputvalue"  [(ngModel)]="n">
+                          <label for="name">Nom</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="p" id="p" placeholder="Nom" class="form form-control inputvalue"  [(ngModel)]="p">
+                          <label for="name">prenom</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="u" id="u" placeholder="Nom" class="form form-control inputvalue"  [(ngModel)]="u">
+                          <label for="name">username</label>
+                        </div>
+                        
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="e" id="e" placeholder="Nom" class="form form-control inputvalue"  [(ngModel)]="e">
+                          <label for="name">email</label>
+                        </div>
+                       
+                        <!-- <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="date" name="debut" id="debut" placeholder="date de debut" class="form form-control inputvalue" [(ngModel)]="debutd">
+                          <label for="num">date debut</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="date" name="debut" id="debut" placeholder="date de debut" class="form form-control inputvalue" [(ngModel)]="find">
+                          <label for="num">date debut</label>
+                        </div> -->
+  
+                       
+                      </div>
+                      <button class="btn btnAjouter"(click)="getDateInputString()" >Ajouter</button>
+                      
+                    
+                    </form>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- la notif -->
+      
+      <div class="modal fade" id="notif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                    <div class="col-md-6">
+                        <h5 class="title">Notification</h5>
+                    </div>
+      
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+      
+      
+              <div class="container content-notif">
+                <!-- liste notification et modif -->
+                <header  class="jumbotron" type="submit" >
+                  <div class="">
+                    <div class="mx-2 d-md-flex bl" >
+                      <!-- etat=0 afficher non lu -->
+                      <label class="signe" for=""></label>
+                      <label class="mx-2 txt"> Non lue</label>
+      
+                    </div>
+                    <h5>
+                      <strong> liste.date </strong>
+                    </h5>
+                    <h5>
+                        liste.message
+                      </h5>
+                  </div>
+      
+                </header>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- pour la modification du profil -->
+  </div>
+ 
+</ion-content>
+
+
+
+
+
+  
+ 
+     
+  
+

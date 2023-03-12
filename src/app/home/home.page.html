@@ -1,0 +1,181 @@
+<!-- l'appel du menu dans les autres page -->
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Menu</ion-title>
+        <ion-button slot="start">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content >
+    <div class="container-fluid" style="background-color: #E6EAF1; margin-left: 10px;">
+      <div class="container-fluid" style="overflow: hidden; background-color: #E6EAF1; margin-left: 10px;">
+          <div class="row flex-nowrap" style="background-color: #E6EAF1;" >
+              <div id="sidebar" class="col-auto sidebar mx-auto collapse collapse-horizontal show"
+                  style="height: 96vh;" >
+        
+                  <div class="col mt-2 mb-2 mx-5">
+                      <div class="lgo py-4 mx-3"></div>
+                  </div>
+                  <hr class="text-center" style="background-color: white;width: 90%; margin-left: auto;
+                  margin-right: auto;">
+        
+                  <div class="li mt-3 mb-5 text-center">
+        
+                    <div class="nav-item mb-3" >
+                      <a class="nav-link" routerLink="/essay" ><i class="bi bi-house mx-2"></i>Dashbords</a>
+                    </div>
+        
+                    <div class="nav-item mb-3">
+                      <a class="nav-link" routerLink="/sidebar/accueil" >Accueil</a>
+                    </div>
+        
+                    <div class="nav-item mb-3">
+                      <a class="nav-link" routerLink="/sidebar/ajouter_geste" >Gestes de secours</a>
+                    </div>
+        
+                    <div class="nav-item mb-5">
+                      <a class="nav-link" routerLink="/sidebar/signale">Signale de danger</a>
+                    </div>
+        
+                    <div class="nav-item mt-5" style="position:relative; top: 220px;">
+                      <!-- deconnection -->
+                      <a class="nav-link mx-auto d-block mt-5 dec" type="submit" >Deconnexion</a>
+                    </div>
+        
+                  </div>
+        
+        
+                  <!-- </div> -->
+              </div>
+              <main class="col container-fluid" style=" height: 100vh ; overflow: scroll; overflow-x: hidden; background-color: #E6EAF1;;">
+        
+                  <div class="Container xs" style="background-color: #E6EAF1; height: 100vh; width: 100%;">
+        
+                    <nav class="navbar navbar py-1" style="background-color: white;" >
+        
+                      <a href="#" class="sidebar-toggler flex-shrink-0" data-bs-toggle="collapse"
+                          data-bs-target="#sidebar" aria-expanded="false"
+                          aria-controls="collapseWidthExample">
+                          <i class="bi bi-list fa-3x mx-2"></i>
+                      </a>
+        
+                      <form class="d-none d-md-flex mr-4">
+                        <div id="container" type="submit" data-bs-toggle="modal" data-bs-target="#notif" class="mt-3">
+                          <i id="icon"  class="bi bi-bell-fill fa-2x mr-2 i"></i>
+                          <div class="number text-center mx-auto">
+                              <!-- le nombre  de notif -->
+                            <div class="" id="number">luelist.length</div>
+                          </div>
+        
+                        </div>
+                        <!-- // nom utilisateur  -->
+                        <i type="submit" data-bs-toggle="modal" data-bs-target="#user" class="bi bi-person-circle fa-3x mx-5"><span>username</span></i>
+        
+                      </form>
+                  </nav>
+                    
+                  dfghjkl;
+                  </div>
+                 
+
+              </main>
+          </div>
+
+        </div>
+       
+        
+        <!-- Le modal concernant les info de l'utilisateur -->
+        <div class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog " role="document">
+            <div class="modal-content mod">
+              <div class="modal-header">
+                      <div class="col-md-6">
+                          <h5 class="title">Mon profil</h5>
+                      </div>
+        
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" >
+        
+                 <!-- afficher info admin -->
+                <div class="container" >
+                  <header class="jumbotron">
+        
+                    <h5>
+                      <strong> Nom d'utilisateur: </strong> currentUser.username
+                    </h5>
+                    <h5>
+                      <strong>Email:</strong>
+                       liste.email 
+                    </h5>
+                    <h5>
+                      <strong>Numero:</strong>
+                       liste.numero
+                    </h5>
+                    <h5>
+                      <strong>Adresse: </strong>
+                       liste.adresse 
+                    </h5>
+                  </header>
+                  <div class="text-end">
+                    <button class="btn btn-outline-success text-center" data-bs-toggle="modal" data-bs-target="#profil"> Modifier</button>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- la notif -->
+        
+        <div class="modal fade" id="notif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                      <div class="col-md-6">
+                          <h5 class="title">Notification</h5>
+                      </div>
+        
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+        
+        
+                <div class="container content-notif">
+                  <!-- liste notification et modif -->
+                  <header  class="jumbotron" type="submit" >
+                    <div class="">
+                      <div class="mx-2 d-md-flex bl" >
+                        <!-- etat=0 afficher non lu -->
+                        <label class="signe" for=""></label>
+                        <label class="mx-2 txt"> Non lue</label>
+        
+                      </div>
+                      <h5>
+                        <strong> liste.date </strong>
+                      </h5>
+                      <h5>
+                          liste.message
+                        </h5>
+                    </div>
+        
+                  </header>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- pour la modification du profil -->
+    </div>
+   
+  </ion-content>
